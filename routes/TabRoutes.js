@@ -16,7 +16,7 @@ export default function TabRoutes() {
         tabBarIcon: ({ color, size }) => {
           if (route.name === "Profile") {
             return <Feather name="user" size={size} color={color} />;
-          }
+          };
         },
       })}
     >

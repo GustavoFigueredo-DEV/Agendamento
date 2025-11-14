@@ -1,4 +1,4 @@
-import { View, Text, Image, TextInput, TouchableOppacity, StyleSheet } from 'react-native';
+import { View, Text, Image, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 import Feather from '@expo/vector-icons/Feather';
 import medkitLogo from '../assets/imgs/medkitLogo.png';
 
@@ -12,6 +12,8 @@ export default function SignUp(){
             </View>
 
             <View style={styles.formulario}>
+                <Text style={styles.formTitle}>Cadastrar</Text>
+
                 <View style={styles.info1}>
                 <TextInput placeholder='Nome completo'/>
                 <TextInput placeholder='CPF'/>
@@ -28,9 +30,6 @@ export default function SignUp(){
                     <TextInput placeholder='Gênero'/>
                 </View>
 
-                <TouchableOppacity>
-                    <Text>Cadastrar</Text>
-                </TouchableOppacity>
             </View>
 
         </View>
@@ -51,6 +50,13 @@ const styles = StyleSheet.create({
     logoText: {
         color: '#41A4C7',
         fontSize: 26,
-        fontWeight: 500,
+        fontWeight: "500",
+    },
+    formulario: {
+        backgroundColor: '',
+    },
+    formTitle: {
+        color: "369DC1",
+        fontSize: 20
     }
 })
